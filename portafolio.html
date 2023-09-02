@@ -1,0 +1,226 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!--Enlace de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Link de el enlace de AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link  id="Filecss" href="css/StylePortafolioMoradoindex.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="tema-color">
+    <button class="open-panel" onclick="activarPanel()">Modos</button>
+    <div class="cont-colores">
+      <button onclick="amarillo()">1</button>
+      <button onclick="morado()">2</button>
+      
+    </div>
+  </div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-porta">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">Portafolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item cabecera">
+                <a class="nav-link" aria-current="page" href="#">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactame</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Acá estoy usando un fade down de la libreria de AOS para que sea más lento-->
+      <!--Acá tambíen empieza una sección de mi portafolio hasta la linea 61-->
+    
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <article class="col-lg-5">
+              <div class="cont-foto">
+                <img class="perfil" src="img/perfil2-removebg-preview.png" alt="hero">
+              </div>
+            </article>
+
+            <article  style="color: #ffffff; font-size: 18px;" class="col-lg-7 cont-info">
+              <br><br><br><br>
+              <h1 style="text-shadow: 2px 2px 4px rgba(115, 0, 255, 0.553);" >Sobre mi</h1>
+              <p>Soy un desarrollador de software altamente competente y apasionado <br> por la creación de soluciones tecnológicas innovadoras. Mi portafolio refleja <br> mi trayectoria profesional y mi dedicación para alcanzar la excelencia en cada proyecto que abordo al intentar encontrar posibles soluciones apoyando a mi <br> equipo de trabajo de distintas formas <br></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      </div>
+    </header>
+
+  
+
+    <main class="serv">
+      <br><br><br><br>
+      <h2 style="text-align: center; text-shadow: 2px 2px 4px rgba(115, 0, 255, 0.553);">Mis Servicios</h2>
+      <br>
+      <p style="text-align: center; font-size: 18px;">En esta parte podras observar algunos de los negocios que ofrezco en cuanto a lenguajes de programación</p>
+      <br>
+      <section>
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+   
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  
+                  <div class="ilusimg">
+                  <img style="width: 250px; height: 250px; box-shadow: 2px 2px 4px rgba(255, 247, 0, 0.553); border-radius: 100px;" src="img/html5-logo-adaweb 1.png" alt="">
+                  <!--Esto solo es una prueba--> 
+                  <p>
+                    <br>
+                    <button style=" background-color: rgb(255, 94, 0);" class="btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#botonhtml" aria-expanded="false" aria-controls="botonhtml">
+                      <p class="p1">Más sobre HTML</p>
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="botonhtml">
+                      <div class="card card-body" style="width: 300px;">
+                        Poseo un sólido conocimiento en HTML y soy capaz de manejarme con confianza al utilizar este lenguaje de marcado. Mi experiencia me permite crear y diseñar páginas web de manera efectiva, incorporando elementos estructurales y de presentación con precisión.
+                        <img src="img/porcentajehtml-removebg-preview.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--La prueba acaba aquí-->
+                  </div>
+                </div>
+                <div class="col order-5">
+                  <img style="width: 150px; height: 250px; box-shadow: 2px 2px 4px rgba(0, 136, 255, 0.553); border-radius: 40px;" src="img/CSS3_logo_and_wordmark 1.png" alt="">
+                  <!--Second in DOM, with a larger order-->
+                   <!--Esto solo es una prueba--> 
+                   <p>
+                    <br>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#botoncss" aria-expanded="false" aria-controls="botoncss">
+                      Más sobre CSS
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="botoncss">
+                      <div class="card card-body" style="width: 300px;">
+                        Tengo la habilidad de dar vida a diseños web, utilizando reglas de estilo para controlar la apariencia y el diseño de las páginas. Esto incluye la creación de diseños responsivos que se adaptan a diferentes dispositivos y tamaños de pantalla.
+                        <img src="img/porcentajecss-removebg-preview.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--La prueba acaba aquí-->
+                </div>
+                <div class="col order-1">
+                  <img style="width: 250px; height: 250px; box-shadow: 2px 2px 4px rgba(255, 247, 0, 0.553); border-radius: 100px;" src="img/JavaScript-logo 1.png" alt="">
+                <!--Third in DOM, with an order of 1-->
+                   <!--Esto solo es una prueba--> 
+                   <p>
+                    <br>
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#botonjs" aria-expanded="false" aria-controls="botonjs">
+                      <p class="p2">Más sobre JS</p>
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="botonjs">
+                      <div class="card card-body" style="width: 300px;">
+                        Puedo programar scripts que mejoran la funcionalidad de un sitio web, desde validación de formularios hasta la creación de efectos visuales y la interacción con el usuario. 
+                        <img src="img/porcentajejs-removebg-preview.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--La prueba acaba aquí-->
+                </div>
+              </div>
+            </div>
+          </div>   
+
+  
+      </section>
+      <section class="proyectos" style="text-align: center; padding: 60px;">
+        <h2 style="text-shadow: 2px 2px 4px rgba(115, 0, 255, 0.553);">Mis proyectos</h2>
+        <br>
+        <p style="font-size: 18px;">En esta parte podras ver sobre algunos de mis proyectos, unos terminados y otros en proceso</p>
+        <br>
+        <div style="font-size: 18px;" class="clearfix">
+          <div class="porti">
+          <img  style="height: 300px; width: 300px; padding-bottom: 80px;" href="..." src="img/portafolio.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." id="imgs">
+        </div>
+        
+          <p style="padding-top: 60px;">
+            A lo largo de mi trayectoria como desarrollador web, he tenido la oportunidad de trabajar en diversos proyectos que destacan por su diversidad y enfoque en el diseño y desarrollo de páginas web. Mi pasión por la creación de experiencias digitales atractivas me ha llevado a explorar múltiples lenguajes de programación y tecnologías innovadoras. Aquí hay un vistazo a algunos de mis proyectos más destacados:
+          </p>
+        
+        </div>
+      </section>
+
+      <section class="estudios">
+        <h2 style="text-align: center; text-shadow: 2px 2px 4px rgba(115, 0, 255, 0.553);">Experiencia</h2>
+        <hr id="miHr">
+        <div style="font-size: 18px;">
+        <p>Diseñador Fron-end</p>
+        <p>Empresa (x)</p>
+        <p>2011 - 2012</p>
+        <hr id="miHt">
+        <p>Diseñador Fron-end</p>
+        <p>Empresa (x)</p>
+        <p>2021 - 2023</p>
+        <hr id="miHy">
+        <p>Diseñador UI</p>
+        <p>Empresa (x)</p>
+        <p>2017 - 2019 </p>
+        <hr id="miHu">
+        <p>Diseñador WEB</p>
+        <p>Empresa (x)</p>
+        <p>2013 - 2016</p>
+        </div>
+
+      </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="social-media">
+        <a href="https://www.Whatsapp.com/3225028592" target="_blank" rel="noopener noreferrer">
+            <img src="img/Whatsapp.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.Facebook.com/Samuel Díaz" target="_blank" rel="noopener noreferrer">
+            <img src="img/Facebook.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/samuel._.diazz" target="_blank" rel="noopener noreferrer">
+            <img src="img/Instagram.png" alt="Instagram">
+        </a>
+    </div>
+    <p>&copy; 2023 Samuel Díaz. Mi portafolio personal.</p>
+    </footer>
+
+    <!-- Link de javascript librerias de boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="juasjuas.js"></script>
+</body>
+</html>
